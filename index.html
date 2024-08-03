@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Enhancer</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Image Enhancer</h1>
+    <input type="file" id="image-upload" accept="image/*">
+    <div class="image-container">
+      <div class="original-image">
+        <h2>Original Image</h2>
+        <img id="original-img" src="" alt="Original Image">
+      </div>
+      <div class="enhanced-image">
+        <h2>Enhanced Image</h2>
+        <canvas id="enhanced-canvas"></canvas>
+      </div>
+    </div>
+    <div class="controls">
+      <label for="brightness">Brightness</label>
+      <input type="range" id="brightness" min="0" max="2" step="0.01" value="1">
+      <label for="contrast">Contrast</label>
+      <input type="range" id="contrast" min="0" max="2" step="0.01" value="1">
+      <button id="download">Download Enhanced Image</button>
+    </div>
+  </div>
+
+
+ 
+  <div class="flower-container"></div>
+  <!-- Other elements like h1, image-container, controls, etc. -->
+
+
+  <script src="/app.js"></script>
+</body>
+</html>
